@@ -1,1 +1,11 @@
 CHECHK NODE VERSION : node -v
+
+React js + vite
+
+npm create vite@latest
+
+npx degit user/project#main my-project
+
+cd my-project
+npm install
+npm run dev
