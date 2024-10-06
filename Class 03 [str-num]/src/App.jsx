@@ -32,7 +32,7 @@ const userlist = user.map((user,index) =>
 } 
 )
 
-// number and string only visible
+ // number and string only visible
   return (
     <>
     <div className='flex justify-center items-center'>
