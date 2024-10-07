@@ -17,10 +17,10 @@ import { useForm } from 'react-hook-form';
 
     <h1>Registration Form</h1>
     <form onSubmit={handleSubmit(submitData)}>
-      <input class='inputs' type="text" placeholder='Enter Username' {...register('username', {required: "UserName is Required", minLength: 6, maxLength: 16 })}/> 
+      <input class='inputs' type="text" placeholder='Enter Username' {...register('username', {required: "UserName is Required", minLength: 6, maxLength: 20 })}/> 
       {errors.username?.type == "required" && ( <p> {errors.username.message} </p>)}
       {errors.username?.type == "minLength" && ( <p> Username must be atleast 6 character long </p>)}
-      {errors.username?.type == "maxLength" && ( <p> Max length 15 character </p>)}
+      {errors.username?.type == "maxLength" && ( <p> Max length 20 character </p>)}
     
       <input class='inputs' type="email" placeholder='Enter Email ID' {...register('email', {required: "Email is Required"})}/> 
       {errors.email?.type == "required" && ( <p> {errors.email.message} </p>)}

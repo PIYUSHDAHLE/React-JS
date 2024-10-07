@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 const App = () => {
   
+  // [variable,function]
 const [gender,setGender] = useState("others");
 const [username,setUsername] = useState("");
 const [email,setEmail] = useState("");
@@ -13,6 +14,11 @@ const SubmitHandler = (e) => {
   e.preventDefault(); // page refresh nahi karta hai
 console.log({username, gender, email,city,valid});
   // submit form to  react server
+  setGender('');
+  setUsername('');
+  setEmail('');
+  setCity('');
+  Setvalid(false); // validation false kardiye
 }
 
   return (

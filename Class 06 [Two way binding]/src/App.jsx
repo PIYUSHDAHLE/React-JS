@@ -7,10 +7,12 @@ const [gender,setGender] = useState("others");
 const [username,setUsername] = useState("");
 const [email,setEmail] = useState("")
 
+
+//Default nature of react is refreshing
 const SubmitHandler = (e) => {
   e.preventDefault(); // page refresh nahi karta hai
 console.log({username, gender, email});
-  // submit form to  react server
+  // submit form to react server
 }
 
   return (
