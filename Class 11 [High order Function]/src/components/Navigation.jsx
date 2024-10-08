@@ -1,9 +1,11 @@
 import React from 'react'
 
 const Navigation = (props) => {
-    const {data,setdata}=props;
+    const {nav,setnav}=props;
+    console.log(props.nav)
+    setnav("kya daal du")
   return (
-    <div>Navigation : {data}</div>
+    <div>{nav}</div>
   )
 }
 

@@ -1,0 +1,28 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html, body{
+height: 100%;
+width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxs{
+background-color: blueviolet;
+color: blue;
+padding: 10px;
+}
+
+/*
+Problem : can not create the css properties which clashes with other components 
+solution : user proper classes with BEM (Block Element Modefier) naming convertion 
+navigation -> navigation_container_para
+Footer -> footer_navigation_para
+*/
