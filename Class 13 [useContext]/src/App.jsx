@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Footer  from "./components/Footer";
 import Navigation  from "./components/Navigation";
-// import Wrapper  from "./utils/Wrapper";
 
 
 const App = () => {
